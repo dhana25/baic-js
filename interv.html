@@ -1,0 +1,18 @@
+<html>
+    <h3>Learning time out & interval</h3>
+    <h2 id="text"></h2>
+</html>
+
+<script>
+    let textNode = document.getElementById("text")
+    let i = 0
+   let newInt =  setInterval(() => {
+        textNode.innerText = i;
+        i++
+    },1000)
+
+    setTimeout(() => {
+        clearInterval(newInt)
+        textNode.innerText = "Hello UI GEM"
+    },6000)
+</script>
